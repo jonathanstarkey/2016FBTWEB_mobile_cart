@@ -1,0 +1,81 @@
+/*------- GENERAL -------*/
+
+/*------- TOP SECURE CHECKOUT -------*/
+.checkout-btn{
+    display: table;
+    
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3731b+0,bc5815+100 */
+    background: #e3731b; /* Old browsers */
+    background: -moz-linear-gradient(top, #e3731b 0%, #bc5815 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e3731b 0%,#bc5815 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e3731b 0%,#bc5815 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3731b', endColorstr='#bc5815',GradientType=0 ); /* IE6-9 */
+    copy
+    Color format:     Comments;
+    
+    width: 13.875em;
+    height: 2.75em;
+    
+    font-weight: 600;
+    
+	color:#fff;
+	border-radius:.375em;
+	-webkit-border-radius:.375em;
+	-moz-border-radius:.375m;
+	-o-border-radius:.375em;
+	-ms-border-radius:.375em;
+	border: 1px solid #9b6612;
+	border-top: 2px solid #e5b25f;
+    
+    text-transform: uppercase;
+}
+.checkout-btn:hover{
+	text-decoration: none;
+	background: #5B5B5B;
+	border: 1px solid #5B5B5B;
+	border-top: 2px solid #5B5B5B;
+}
+.checkout-btn span{
+	padding-right:0.3em;
+	margin-right:0.3em;
+	display:inline-block;
+}
+.checkout-btn:hover{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+
+span.fa.fa-lock.fa-2x {
+    display: table-cell;
+    padding-left: .375em;
+    
+    vertical-align: middle;
+}
+
+span.checkout-btn-label {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*------- SHIPPING FORM -------*/
+.shippingForm {
+   border:1px solid #888888; 
+}
+
+.shippingParent {
+    border-bottom:1px solid #888888;
+}
+
+.shippingLabel, .shippingRadio {
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+
+/*------- COUPON FORM -------*/
+
+.couponForm input[type=text] {
+    height: 32px
+}
