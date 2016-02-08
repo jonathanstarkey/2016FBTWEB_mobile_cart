@@ -1,5 +1,25 @@
 /*------- GENERAL -------*/
 
+/*------- TOP CHECKOUT NAV -------*/
+.checkoutNav {
+    display: table;
+    
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+
+span.fa.fa-chevron-left.fa-2x {
+    display: table-cell;
+    padding-left: .375em;
+    
+    vertical-align: middle;
+}
+
+span.heckoutNavCopy {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /*------- TOP SECURE CHECKOUT -------*/
 .checkout-btn{
     display: table;

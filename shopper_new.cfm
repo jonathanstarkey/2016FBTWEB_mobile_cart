@@ -9,8 +9,8 @@
     </head>
     <body>
     <!-- // BEGIN BACK NAV -->
-        <div>
-            <span>Back to Shopping</span>
+        <div class="checkoutNav">
+           <span class="fa fa-chevron-left fa-2x"></span> <span class="checkoutNavCopy">Back to Shopping</span>
         </div>
     
         
