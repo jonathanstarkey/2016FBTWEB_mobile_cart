@@ -7,7 +7,7 @@
     <link href="css/checkoutNew.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.css">
     </head>
-    <body>
+    <body class="mobileCheckout">
     <!-- // BEGIN BACK NAV -->
         <div class="checkoutNav">
            <span class="fa fa-chevron-left fa-2x"></span> <span class="checkoutNavCopy">Back to Shopping</span>
@@ -16,8 +16,19 @@
         
     <!-- // END BACK NAV -->
     <!-- // BEGIN TOP CHECKOUT FORM -->
-        <div>
-            <a href="##" class="checkout-btn"><span class="fa fa-lock fa-2x"></span><span class="checkout-btn-label">Secure Checkout</span></a>
+        
+        <div class="topCheckoutContainer">
+            <div class="topCheckoutSub">
+                <div>
+                    <span>Est. total</span><span>(## Items)</span>
+                </div>
+                <div>
+                    <span>$100.00</span>
+                </div>
+            </div>
+            <div class="topCheckoutSub sub2">
+                <a href="##" class="checkout-btn"><span class="fa fa-lock fa-2x"></span><span class="checkout-btn-label">Secure Checkout</span></a>
+            </div>
         </div>
     
         

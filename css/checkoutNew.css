@@ -1,44 +1,44 @@
 /*------- GENERAL -------*/
-
+.mobileCheckout {
+    width: 375px;
+    margin: 0 auto;
+}
 /*------- TOP CHECKOUT NAV -------*/
 .checkoutNav {
     display: table;
     
+    color: #e3731b;
     font-weight: 600;
     text-transform: uppercase; 
 }
 
 span.fa.fa-chevron-left.fa-2x {
     display: table-cell;
-    padding-left: .375em;
     
     vertical-align: middle;
 }
 
-span.heckoutNavCopy {
+span.checkoutNavCopy {
     display: table-cell;
     vertical-align: middle;
 }
 
 /*------- TOP SECURE CHECKOUT -------*/
+.topCheckoutContainer {
+   display: inline-block;
+}
 .checkout-btn{
     display: table;
-    
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3731b+0,bc5815+100 */
-    background: #e3731b; /* Old browsers */
-    background: -moz-linear-gradient(top, #e3731b 0%, #bc5815 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #e3731b 0%,#bc5815 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #e3731b 0%,#bc5815 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3731b', endColorstr='#bc5815',GradientType=0 ); /* IE6-9 */
-    copy
-    Color format:     Comments;
+    background: #e3731b;
     
     width: 13.875em;
     height: 2.75em;
     
     font-weight: 600;
     
-	color:#fff;
+    margin-right: 0;
+    
+	color:#ffffff;
 	border-radius:.375em;
 	-webkit-border-radius:.375em;
 	-moz-border-radius:.375m;
@@ -49,22 +49,19 @@ span.heckoutNavCopy {
     
     text-transform: uppercase;
 }
+
 .checkout-btn:hover{
 	text-decoration: none;
 	background: #5B5B5B;
 	border: 1px solid #5B5B5B;
 	border-top: 2px solid #5B5B5B;
 }
+
 .checkout-btn span{
 	padding-right:0.3em;
 	margin-right:0.3em;
 	display:inline-block;
 }
-.checkout-btn:hover{
-	text-decoration:none;
-	color:#FFFFFF;
-}
-
 
 span.fa.fa-lock.fa-2x {
     display: table-cell;
@@ -78,10 +75,21 @@ span.checkout-btn-label {
     vertical-align: middle;
 }
 
+.topCheckoutSub {
+    display: inline-block;
+    
+    font-weight: 800;
+    
+    vertical-align: middle;
+}
+
+.sub2 {
+    
+}
 
 /*------- SHIPPING FORM -------*/
 .shippingForm {
-   border:1px solid #888888; 
+    border:1px solid #888888; 
 }
 
 .shippingParent {
