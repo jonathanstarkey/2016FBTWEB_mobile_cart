@@ -1,7 +1,8 @@
 /*------- GENERAL -------*/
 .mobileCheckout {
     width: 375px;
-    margin: 0 auto;
+    margin: 0 auto;    
+    border: solid 1px;
 }
 /*------- TOP CHECKOUT NAV -------*/
 .checkoutNav {
@@ -12,6 +13,7 @@
     display: table;
     width: 100%;
     margin-top: 20px;
+    padding: 0 10px;
     
     font-family: 'Lato', sans-serif;
     
@@ -42,6 +44,7 @@ span.checkoutNavCopy {
 .topCheckoutContainer {
     display: inline-block;
     margin-top: 10px;
+    padding: 0 10px;
     
     font-family: 'Lato', sans-serif;
 }
@@ -60,12 +63,10 @@ span.topSubTotal {
     display: table;
     background: #e3731b;
     
-    width: 13.875em;
+    width: 13em;
     height: 2.75em;
     
     font-weight: 600;
-    
-    margin-right: 0;
     
 	color:#ffffff;
 	border-radius:.375em;
@@ -106,7 +107,7 @@ span.checkout-btn-label {
 
 .topCheckoutSub {
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 5px;
     
     font-weight: 800;
     
@@ -118,6 +119,10 @@ span.checkout-btn-label {
 }
 
 /*------- SHIPPING FORM -------*/
+div.shippingContainer {
+    padding: 0 10px;
+}
+
 form.shippingForm {
     border:1px solid #888888;
     background-color: #ffffff;
@@ -128,7 +133,9 @@ form.shippingForm {
 
 div.shippingParent {
     padding: 7px 8px 8px 8px;
-    
+}
+
+div.cartRule {
     border-bottom:1px solid #888888;
 }
 
@@ -148,7 +155,7 @@ span.shippingMethod {
 }
 
 span.shippingFree {
-    padding-left: 90px;
+    padding-left: 70px;
     
     color: #e3731b;
     font-weight: 900;
@@ -166,16 +173,25 @@ div.shippingLabel a:hover {
     color: #e3731b;
 }
 
+span.shippingFlatRate {
+    font-weight: 800;
+    padding-left: 65px;
+}
+
 p.shippingCopy {
     padding-left: 30px;
     
     font-size: .875em;
 }
 
-/*------- COUPON FORM -------*/
+/*------- PROMO & CERTIFICATE DROPDOWN -------*/
 
 div.dropdown {
     width: 100%;
+}
+
+div.dropContainer {
+    padding: 0 10px;
 }
 
 /* Dropdown Button */
@@ -204,7 +220,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 p.dropbtnLabel {
     vertical-align: middle;
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 20px;
+    
+    font-weight: 800;
 }
 
 span.dropbtnChevron{
@@ -228,7 +246,7 @@ span.dropbtnChevron{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+/*    position: absolute;*/
     margin-top: 10px;
     
     width: 100%; 
@@ -240,11 +258,13 @@ span.dropbtnChevron{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+/*------- END PROMO & CERTIFICATE DROPDOWN -------*/
+
+/*------- PROMO & CERTIFICATE FORM -------*/
 
 .couponForm input[type=text] {
     height: 32px;
-    text-align: center;
-    margin-left: 5px;
+/*    margin-left: 3px;*/
 }
 
 .couponForm input[type=submit] {
@@ -259,7 +279,43 @@ form.couponForm2 {
     margin-top: 7px;
 }
 
+input.textInput {
+    padding-left: 10px;
+    
+    font-family: 'Lato', sans-serif;
+    color: #b2b2b2;
+}
 
+/*------- END PROMO & CERTIFICATE FORM -------*/
+
+/*------- BEGIN CART -------*/
+div.cartContainer {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+div.productContainer img {
+    margin: 5px 0;
+}
+
+div.addRemoveProduct {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 0 0 3px 5px;
+}
+
+button.cartButton {
+    width: 26px;
+    height: 26px;
+        
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+
+/*------- END CART -------*/
 
 
 
