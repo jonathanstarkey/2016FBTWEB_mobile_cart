@@ -80,27 +80,28 @@
         <div class="cartParent">
             <div class="cartContainer">
                 <div class="cartRule"></div>
+                <!-- // BEGIN PRODUCT CONTAINER -->
                 <div class="cartRule productContainer">
-                    <div>
+                    <div class="cartLeft">
                         <img src="" alt="product" height="60" width="60">
                         <div class="addRemoveProduct">
                             <button class="cartButton"> - 
                             </button>
-                            <input type="text" name="##" style="font-size: 12px; vertical-align: middle;"
+                            <input type="text" name="##" style="font-size: 12px;"
                 size="2" value="" class="textInputCart" id="" required="">
                             <button class="cartButton"> + 
                             </button>
-
                         </div>
                     </div>
-                    <div>
-                    
+                    <div class="cartRight">
+                        <a href="##" class="productDescription">Product Description</a>
+                        <span class="skuPrice"><a href="##" class="skuNumber">sku###</a>$99.00</span>
+                        <span class="skuOriginalPrice">Reg. ($100.00)</span>
                     </div>
                 </div>
+                <!-- // END PRODUCT CONTAINER -->
             </div>
         </div>
-        
-        
         <!-- // END CART FORM -->
         <!-- // BEGIN BOTTOM CHECKOUT FORM -->
         
