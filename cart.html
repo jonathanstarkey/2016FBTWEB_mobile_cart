@@ -39,8 +39,8 @@
     <!-- // BEGIN SHIPPING FORM -->
         <div class="shippingContainer">
             <form class="shippingForm">
-                <div class="shippingParent cartRule">
-                    <input type="radio" name="shipping" value="Store Pickup" class="shippingRadio" checked>
+                <div class="shippingParent cartRuleBtm">
+                    <input type="radio" name="shipping" value="Store Pickup" class="shippingRadio">
                     <div class="shippingLabel">
                         <span class="shippingMethod">Store Pickup</span><a href="##">Change Store</a><span class="shippingFree">free</span>
                     </div>
@@ -48,7 +48,7 @@
     in <span id="shippingCity" style="font-weight: 700;">Overland Park, KS</span></p> 
                 </div>
                 <div class="shippingParent">
-                    <input type="radio" name="shipping" value="Shipping" class="shippingRadio" >
+                    <input type="radio" name="shipping" value="Shipping" class="shippingRadio" checked>
                     <div class="shippingLabel">
                         <span class="shippingMethod">Shipping</span><span class="shippingFlatRate">$3.99 Flat Rate Shipping</span>
                     </div>
@@ -79,9 +79,8 @@
         <!-- // BEGIN CART FORM -->
         <div class="cartParent">
             <div class="cartContainer">
-                <div class="cartRule"></div>
                 <!-- // BEGIN PRODUCT CONTAINER -->
-                <div class="cartRule productContainer">
+                <div class="cartRuleTop productContainer">
                     <div class="cartLeft">
                         <img src="" alt="product" height="60" width="60">
                         <div class="addRemoveProduct">
@@ -103,10 +102,24 @@
             </div>
         </div>
         <!-- // END CART FORM -->
+        <div class="cartRuleTop productContainer">
         <!-- // BEGIN BOTTOM CHECKOUT FORM -->
-        
-    
-        
+        <div class="btmChecktContainer">
+            <div class="btmChecktParent">
+                <div class="btmChecktProduct">
+                    <span>Product Total<span class="productTotalNotes">&nbsp;(Including Coupons & Certificates)</span></span><span class="btmProductTotal">$100.00</span>
+                </div>
+                <div class="btmChecktShipping">
+                    <span>Shipping</span><span class="btmChecktShipStatus">Free</span>
+                </div>
+                <div class="btmChecktSubTotal">
+                    <span>Pre-Tax Sub Total <span>(## Items)</span></span><span class="btmProductTotal">$100.00</span>
+                </div>
+                <div class="btmCheckoutSub">
+                    <a href="##" class="checkout-btn-large"><span class="fa fa-lock fa-2x security"></span><span class="checkout-btn-label-large">Secure Checkout</span></a>
+                </div>
+            </div>
+        </div>
         <!-- // END BOTTOM CHECKOUT FORM -->
         
     </body>

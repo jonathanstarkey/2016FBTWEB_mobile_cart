@@ -5,8 +5,9 @@
     
     background-color: #ffffff;
     
-    border: solid 1px;
+/*    border: solid 1px;*/
 }
+
 /*------- TOP CHECKOUT NAV -------*/
 .checkoutNav {
 
@@ -15,8 +16,7 @@
 .checkoutNavLink {
     display: table;
     width: 100%;
-    margin-top: 20px;
-    padding: 0 10px;
+    padding: 20px 10px 0;
     
     font-family: 'Lato', sans-serif;
     
@@ -127,7 +127,7 @@ div.shippingContainer {
 }
 
 form.shippingForm {
-    border:1px solid #888888;
+    border:1px solid #e2e2e2;
     background-color: #ffffff;
     margin-top: 8px;
     
@@ -138,8 +138,12 @@ div.shippingParent {
     padding: 7px 8px 8px 8px;
 }
 
-div.cartRule {
-    border-bottom:1px solid #888888;
+div.cartRuleTop {
+    border-top:1px solid #e2e2e2;
+}
+
+div.cartRuleBtm {
+    border-bottom:1px solid #e2e2e2;
 }
 
 .shippingLabel, .shippingRadio {
@@ -217,7 +221,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     text-transform: uppercase;
     
     
-    border: solid 1px #888888;
+    border: solid 1px #e2e2e2;
     border-radius: 4px; 
     cursor: pointer;
 }
@@ -387,7 +391,7 @@ div.btmChecktParent {
 
 div.btmChecktProduct, div.btmChecktShipping, div.btmChecktSubTotal    {
     font-size: .875em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 span.productTotalNotes {
@@ -471,3 +475,128 @@ a.checkout-btn-large {
 }
 
 /*------- END BOTTOM CHECKOUT FORM -------*/
+
+/*------- BEGIN PURCHASE PAGE -------*/
+
+/*------- BEGIN ACCOUNT LOGIN SECTION -------*/
+/*------- END ACCOUNT LOGIN SECTION -------*/
+
+/*------- BEGIN GUEST CHECKOUT SECTION -------*/
+/*------- END GUEST CHECKOUT SECTION -------*/
+
+
+/*------- BEGIN SHIPPING SECTION -------*/
+
+/* Express Dropdown Button */
+.expDropbtn {
+    width: 100%;
+    height: 48px;
+    margin-top: 10px;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cccccc+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    
+    
+    border: solid 1px #e2e2e2;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+span.expDropbtnLabel {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0 20px 0 10px;
+    
+    font-weight: 800;
+}
+
+span.expShipTime {
+    padding-right: 10px;
+    
+    font-size: .8em;
+    font-weight:500;
+    text-transform: none;
+}
+
+span.expDropbtnChevron{
+    vertical-align: middle;
+    padding-bottom: 2px;
+    
+}
+
+form.expShippingForm {
+/*    border:1px solid #e2e2e2;*/
+    background-color: #ffffff;
+    margin-top: 8px;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+a.shippingMethod, span.shipDate {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+a.shippingMethod {
+    padding-left: 5px;
+    
+    color: blue;
+    text-decoration:underline;
+}
+
+a.shippingMethod:hover {
+    color: #e3731b;
+}
+
+div.expShipLabel{
+    display:inline-block;
+/*    margin-top: 3px;    */
+    float: right;
+}
+
+span.expShipRate, span.shipDate {
+    color: #bbbbbb;
+}
+
+span.expShipRate {
+    padding-right: 20px;
+    
+    font-size: .875em;
+    font-weight: 600;
+}
+/*------- END SHIPPING SECTION -------*/
+
+/*------- BEGIN BOTTOM PURCHASE SECTION -------*/
+
+span.purchase-btn-label-large {
+    display: table-cell;
+    
+    vertical-align: middle;
+    
+    text-align: center;
+}
+
+
+/*------- END BOTTOM PURCHASE SECTION -------*/
+
+/*------- END PURCHASE PAGE -------*/
+
+
+
+
+
+
+
+
+
+

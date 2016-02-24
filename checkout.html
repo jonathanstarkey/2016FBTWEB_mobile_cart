@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/checkoutNew.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="mobileCheckout">
+    <!-- // BEGIN BACK NAV -->
+        
+        <a href="##" class="checkoutNavLink">
+            <span class="fa fa-chevron-left fa-2x"></span> <span class="checkoutNavCopy">Back to Cart</span>
+        </a>    
+    <!-- // END BACK NAV -->
+    <!-- // BEGIN ACCOUNT FORM -->
+        <div class="shippingContainer">
+            <form class="couponForm">
+                        <input type="text" name="##" style="font-size: 18px; vertical-align: middle;"
+            size="27" value="Promo Code" class="textInput" id="" required="">
+                        <input type="submit" value="ADD" class="product-btn" style="font-size: 18px; vertical-align: middle;">
+                    </form>
+                    <form class="couponForm couponForm2">
+                        <input type="text" name="##" style="font-size: 18px; vertical-align: middle;"
+            size="27" value="Gift Certificate" class="textInput" id="" required="">
+                        <input type="submit" value="ADD" class="product-btn" style="font-size: 18px; vertical-align: middle;">
+                    </form>
+        </div>
+        <!-- // END ACCOUNT FORM -->
+        <!-- // BEGIN GUEST CHECKOUT FORM -->
+        <!-- // END GUEST CHECKOUT FORM -->
+        <!-- // BEGIN EXPRESS SHIPPING FORM -->
+        <div class="dropdown">
+            <div class="dropContainer">
+                <button onclick="myFunction()" class="expDropbtn"><span class="expDropbtnLabel">Express Shipping</span><span class="expShipTime">(Est. Delivery ##/##)</span><span class="fa fa-chevron-down fa-2x expDropbtnChevron"></span></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <form class="expShippingForm">
+                        <!-- // BEGIN EXPRESS SHIPPING CONTENT -->
+                        <div class="shippingParent cartRuleTop">
+                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" checked>
+
+                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                            <div class="expShipLabel">
+                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                            </div>
+                        </div>
+                        <div class="shippingParent cartRuleTop">
+                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" >
+
+                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                            <div class="expShipLabel">
+                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                            </div>
+                        </div>
+                        <div class="shippingParent cartRuleTop">
+                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" >
+
+                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                            <div class="expShipLabel">
+                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- // END EXPRESS SHIPPING CONTENT -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- // END EXPRESS SHIPPING FORM -->
+        <div class="cartRuleTop productContainer">
+        <!-- // BEGIN BOTTOM CHECKOUT FORM -->
+        <div class="btmChecktContainer">
+            <div class="btmChecktParent">
+                <div class="btmChecktProduct">
+                    <span>Product Total<span class="productTotalNotes">&nbsp;(Including Coupons & Certificates)</span></span><span class="btmProductTotal">$100.00</span>
+                </div>
+                <div class="btmChecktShipping">
+                    <span>Shipping</span><span class="btmChecktShipStatus">Free</span>
+                </div>
+                <div class="btmChecktSubTotal">
+                    <span>Pre-Tax Sub Total <span>(## Items)</span></span><span class="btmProductTotal">$100.00</span>
+                </div>
+                <div class="btmCheckoutSub">
+                    <a href="##" class="checkout-btn-large"></span><span class="purchase-btn-label-large">Place Order</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- // END BOTTOM CHECKOUT FORM -->
+        
+    </body>
+</html>
+
+<script>
+
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.expDropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+//      if (openDropdown.classList.contains('show')) {
+//        openDropdown.classList.remove('show');
+//      }
+    }
+  }
+}
+
+
+
+
+
+</script>
