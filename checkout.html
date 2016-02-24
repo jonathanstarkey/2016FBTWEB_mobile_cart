@@ -2,8 +2,15 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta content="width=device-width" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+        
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<!--	<link rel="stylesheet" type="text/css" href="css/demo.css">-->
+	<link rel="stylesheet" type="text/css" href="css/paymentInfo.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="css/checkoutNew.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -18,19 +25,60 @@
     <!-- // END BACK NAV -->
     <!-- // BEGIN ACCOUNT FORM -->
         <div class="shippingContainer">
-            <form class="couponForm">
-                        <input type="text" name="##" style="font-size: 18px; vertical-align: middle;"
-            size="27" value="Promo Code" class="textInput" id="" required="">
-                        <input type="submit" value="ADD" class="product-btn" style="font-size: 18px; vertical-align: middle;">
-                    </form>
-                    <form class="couponForm couponForm2">
-                        <input type="text" name="##" style="font-size: 18px; vertical-align: middle;"
-            size="27" value="Gift Certificate" class="textInput" id="" required="">
-                        <input type="submit" value="ADD" class="product-btn" style="font-size: 18px; vertical-align: middle;">
-                    </form>
+            <form class="couponForm cartRuleBtm">
+                <span>Your Account Login</span>
+                <input type="submit" value="SIGN IN" class="product-btn" style="font-size: 18px; vertical-align: middle;">
+            </form>
+            <form class="couponForm couponForm2 cartRuleBtm">
+                <span>Amazon Login</span>
+                <input type="submit" value="SIGN IN" class="product-btn" style="font-size: 18px; vertical-align: middle;">
+            </form>
         </div>
         <!-- // END ACCOUNT FORM -->
         <!-- // BEGIN GUEST CHECKOUT FORM -->
+        <form>
+        
+        </form>
+        <form class="guestCheckout">
+            <div class="addressFieldset">
+                 <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+            size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput" id="" required="">
+                <div class="cartRuleTop"></div>
+                <fieldset >
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1" id="" required="">
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2" id="" required="">
+                </fieldset>
+                <div class="cartRuleTop"></div>
+                <fieldset >
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3" id="" required="">
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="State" class="guestCheckoutInput shipAdressInput_4" id="" required="">
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5" id="" required="">
+                </fieldset>
+                <div class="cartRuleTop"></div>
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="Phone" class="guestCheckoutInput" id="" required="">
+                <div class="cartRuleTop"></div>
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="email" class="guestCheckoutInput" id="" required="">
+           </div>
+            
+            <fieldset class="credit-card-group">
+<!--                <legend>Credit Card Information</legend>-->
+                <label for="card-number">Credit Card Number</label>
+                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
+                <label for="card-number">Expiration Date</label>
+                <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
+                <label for="card-number">CVV Number</label>
+                <input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv">
+                <label for="card-number">Billing Zip Code</label>
+                <input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip" id="card-zip">
+            </fieldset>
+        </form>
         <!-- // END GUEST CHECKOUT FORM -->
         <!-- // BEGIN EXPRESS SHIPPING FORM -->
         <div class="dropdown">
@@ -71,6 +119,11 @@
             </div>
         </div>
         <!-- // END EXPRESS SHIPPING FORM -->
+        
+        <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
+        <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
+        
+        <!-- // END GUEST CHECKOUT FORM -->
         <div class="cartRuleTop productContainer">
         <!-- // BEGIN BOTTOM CHECKOUT FORM -->
         <div class="btmChecktContainer">
@@ -90,35 +143,34 @@
             </div>
         </div>
         <!-- // END BOTTOM CHECKOUT FORM -->
+        <script src="scripts/libs/modernizr.js"></script>
+        <script src="scripts/libs/jquery.js"></script>
+        <script src="scripts/libs/jquery.inputmask.js"></script>
+        <script src="scripts/libs/jquery.inputmask.date.extensions.js"></script>
+	   <script src="scripts/app.js"></script>
+        <script>
+
+            /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.expDropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+        //      if (openDropdown.classList.contains('show')) {
+        //        openDropdown.classList.remove('show');
+        //      }
+            }
+          }
+        }
+    </script>
         
     </body>
 </html>
-
-<script>
-
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.expDropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-//      if (openDropdown.classList.contains('show')) {
-//        openDropdown.classList.remove('show');
-//      }
-    }
-  }
-}
-
-
-
-
-
-</script>
