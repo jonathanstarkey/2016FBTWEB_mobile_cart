@@ -147,7 +147,7 @@ div.cartRule {
 } 
 
 input[type='radio'] {
-    transform: scale(1.5);
+/*    transform: scale(1.5);*/
     padding-top: 20px;
 }
 
@@ -185,6 +185,7 @@ p.shippingCopy {
     padding-left: 30px;
     
     font-size: .875em;
+    font-weight:500;
 }
 
 /*------- PROMO & CERTIFICATE DROPDOWN -------*/
@@ -372,10 +373,101 @@ span.skuOriginalPrice {
     font-size: .9em;
     font-weight: 500;
 }
-
-
 /*------- END CART -------*/
 
+/*------- BEGIN BOTTOM CHECKOUT FORM -------*/
 
+div.btmChecktContainer {
+    background-color: #f2f2f2;
+}
 
+div.btmChecktParent {
+    padding: 10px;
+}
 
+div.btmChecktProduct, div.btmChecktShipping, div.btmChecktSubTotal    {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+span.productTotalNotes {
+    font-size: .8em;
+}
+
+span.btmProductTotal {
+    float: right;
+}
+
+span.btmChecktShipStatus {
+    float: right;
+    
+    color: #e3731b;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+div.btmChecktSubTotal {
+    font-weight: 900;
+}
+
+div.btmCheckoutSub {
+    margin-top: 5px;
+}
+
+.checkout-btn-large{
+    display: table;
+    background: #e3731b;
+    
+    width: 13em;
+    height: 2.75em;
+    
+    font-weight: 600;
+    
+	color:#ffffff;
+	border-radius:.375em;
+	-webkit-border-radius:.375em;
+	-moz-border-radius:.375m;
+	-o-border-radius:.375em;
+	-ms-border-radius:.375em;
+	border: 1px solid #9b6612;
+	border-top: 2px solid #e5b25f;
+    
+    text-transform: uppercase;
+}
+
+.checkout-btn-large:hover{
+	text-decoration: none;
+	background: #5B5B5B;
+	border: 1px solid #5B5B5B;
+	border-top: 2px solid #5B5B5B;
+}
+
+.checkout-btn-large span{
+	padding-right:0.3em;
+	margin-right:0.3em;
+	display:inline-block;
+}
+
+/*
+span.securityLock {
+    position: absolute
+    padding-left: .375em;
+    
+    vertical-align: middle;
+}
+*/
+
+span.checkout-btn-label-large {
+    display: table-cell;
+    padding-left: 50px;
+    
+    vertical-align: middle;
+    
+    text-align: left;
+}
+
+a.checkout-btn-large {
+    width: 100%;
+}
+
+/*------- END BOTTOM CHECKOUT FORM -------*/
