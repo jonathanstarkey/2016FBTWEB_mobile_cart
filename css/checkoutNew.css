@@ -478,15 +478,53 @@ a.checkout-btn-large {
 /*------- BEGIN PURCHASE PAGE -------*/
 
 /*------- BEGIN ACCOUNT LOGIN SECTION -------*/
+div.accountLoginContainer{
+    margin-top: 10px;
+    padding: 0 10px;  
+    
+    text-align: right;
+}
+
+span.accountLabel {
+    padding-right: 5px;
+    font-weight: 800;
+}
+
+a.accountBtn {
+	background:#e37325;
+	padding:0.4em 1em;
+	color:#fff;
+	border-radius:30em;
+	-webkit-border-radius:30em;
+	-moz-border-radius:30em;
+	-o-border-radius:30em;
+	-ms-border-radius:30em;
+	border: 1px solid #9b6612;
+	border-top: 2px solid #e5b25f;
+	display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    font-weight: 500;
+    text-transform: uppercase; 
+}
+
+
 /*------- END ACCOUNT LOGIN SECTION -------*/
 
 /*------- BEGIN GUEST CHECKOUT SECTION -------*/
 .guestCheckout {
-    padding: 0 10px;
+    margin-top: 10px;
+    padding: 0 10px;  
+}
+
+label.guestCheckoutLabel {
+    font-weight: 800;
 }
 
 .addressFieldset {
     border: 1px solid #bbbbbb;
+    margin-top: 5px;
 }
 
 input.guestCheckoutInput {
@@ -531,6 +569,23 @@ input.shipAdressInput_5 {
 
 /*------- END GUEST CHECKOUT SECTION -------*/
 
+/*------- BEGIN ALT SHIPPING SECTION -------*/
+
+/*
+input[type=checkbox]{
+    display: none;
+}
+*/
+
+form.altShippingAddress {
+    display: none;
+}
+
+input[type=checkbox]:not(:checked) ~ form.altShippingAddress {
+    display: inherit;
+}
+
+/*------- END ALT SHIPPING SECTION -------*/
 
 /*------- BEGIN SHIPPING SECTION -------*/
 
