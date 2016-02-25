@@ -1,273 +1,277 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+"http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta content="width=device-width" name="viewport">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<!--	<link rel="stylesheet" type="text/css" href="css/demo.css">-->
-	<link rel="stylesheet" type="text/css" href="css/paymentInfo.css">
+    <!--	<link rel="stylesheet" type="text/css" href="css/demo.css">-->
+    <link rel="stylesheet" type="text/css" href="css/paymentInfo.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-        
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="css/checkoutNew.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    </head>
-    <body class="mobileCheckout">
+</head>
+
+<body class="mobileCheckout">
     <!-- // BEGIN BACK NAV -->
-        
-        <a href="cart.html" class="checkoutNavLink">
-            <span class="fa fa-chevron-left fa-2x"></span> <span class="checkoutNavCopy">Back to Cart</span>
-        </a>    
+
+    <a href="cart.html" class="checkoutNavLink">
+        <span class="fa fa-chevron-left fa-2x"></span> <span class="checkoutNavCopy">Back to Cart</span>
+    </a>
     <!-- // END BACK NAV -->
     <!-- // BEGIN ACCOUNT FORM -->
-        <div class="accountLoginContainer">
-            <form class="cartRuleTop cartRuleBtm">
-                <span class="accountLabel">Your Account Login</span>
-                <a href="##" value="SIGN IN" class="accountBtn" style="font-size: 18px; vertical-align: middle;">Sign In</a>
-            </form>
-            <form class="cartRuleBtm">
-                <span class="accountLabel">Amazon Login</span>
-                <a href="##" value="SIGN IN" class="accountBtn" style="font-size: 18px; vertical-align: middle;">Sign In</a>
-            </form>
+    <div class="accountLoginContainer">
+        <form class="cartRuleTop cartRuleBtm">
+            <span class="accountLabel">Your Account Login</span>
+            <a href="##" value="SIGN IN" class="accountBtn" style="font-size: 18px; vertical-align: middle;">Sign In</a>
+        </form>
+        <form class="cartRuleBtm">
+            <span class="accountLabel">Amazon Login</span>
+            <a href="##" value="SIGN IN" class="accountBtn" style="font-size: 18px; vertical-align: middle;">Sign In</a>
+        </form>
+    </div>
+    <!-- // END ACCOUNT FORM -->
+    <!-- // BEGIN GUEST CHECKOUT FORM -->
+    <form class="guestCheckout">
+        <div>
+            <label class="guestCheckoutLabel">Guest Checkout</label>
         </div>
-        <!-- // END ACCOUNT FORM -->
-        <!-- // BEGIN GUEST CHECKOUT FORM -->
-        <form class="guestCheckout">
-            <div>
-                <label class="guestCheckoutLabel">Guest Checkout</label>
-            </div>
-            <div class="addressFieldset">
-                 <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-            size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput" id="" required="">
-                <div class="cartRuleTop"></div>
-                <fieldset >
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1" id="" required="">
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2" id="" required="">
-                </fieldset>
-                <div class="cartRuleTop"></div>
-                <fieldset >
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3" id="" required="">
-                    <select tabindex="2" id="states" class="statesOption">
-    <option value="State" selected="selected">State</option>                
-    <option value="AL">AL</option>
-    <option value="AK">AK</option>
-    <option value="AZ">AZ</option>
-    <option value="AR">AR</option>    
-    <option value="CA">CA</option>    
-    <option value="CO">CO</option>    
-    <option value="CT">CT</option>    
-    <option value="DE">DE</option>    
-    <option value="DC">DC</option>    
-    <option value="FL">FL</option>    
-    <option value="GA">GE</option>    
-    <option value="HI">HI</option>    
-    <option value="ID">ID</option>    
-    <option value="IL">IL</option>    
-    <option value="IN">IN</option>    
-    <option value="IA">IA</option>    
-    <option value="KS">KS</option>    
-    <option value="KY">KY</option>    
-    <option value="LA">LA</option>    
-    <option value="ME">ME</option>
-    <option value="MD">MD</option>
-    <option value="MA">MA</option>
-    <option value="MI">MI</option>
-    <option value="MN">MN</option>
-    <option value="MS">MS</option>
-    <option value="MO">MO</option>
-    <option value="MT">MT</option>
-    <option value="NE">NE</option>    
-    <option value="NV">NV</option>    
-    <option value="NH">NH</option>    
-    <option value="NJ">NJ</option>    
-    <option value="NM">NM</option>
-    <option value="NY">NY</option>    
-    <option value="NC">NC</option>
-    <option value="ND">ND</option>
-    <option value="OH">OH</option>    
-    <option value="OK">OK</option>
-    <option value="OR">OR</option>
-    <option value="PA">PA</option>
-    <option value="RI">RI</option>
-    <option value="SC">SC</option>
-    <option value="SD">SD</option>
-    <option value="TN">TN</option>
-    <option value="TX">TX</option>
-    <option value="UT">UT</option>
-    <option value="VT">VT</option>    
-    <option value="VA">VA</option>
-    <option value="WA">WA</option>    
-    <option value="WV">WV</option>    
-    <option value="WI">WI</option>
-    <option value="WY">WY</option>
-</select>
-<!--
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="State" class="guestCheckoutInput shipAdressInput_4" id="" required="">
--->
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5" id="" required="">
-                </fieldset>
-                <div class="cartRuleTop"></div>
-                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Phone" class="guestCheckoutInput" id="" required="">
-                <div class="cartRuleTop"></div>
-                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="email" class="guestCheckoutInput" id="" required="">
-           </div>
-            
-            <fieldset class="credit-card-group">
-<!--                <legend>Credit Card Information</legend>-->
-                <label for="card-number">Credit Card Number</label>
-                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
-                <label for="card-number">Expiration Date</label>
-                <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
-                <label for="card-number">CVV Number</label>
-                <input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv">
-                <label for="card-number">Billing Zip Code</label>
-                <input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip" id="card-zip">
+        <div class="addressFieldset">
+            <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput" id="" required="">
+            <div class="cartRuleTop"></div>
+            <fieldset>
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1" id="" required="">
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2" id="" required="">
             </fieldset>
-        </form>
-        <!-- // END GUEST CHECKOUT FORM -->
-        <!-- // BEGIN ALT SHIPPING FORM -->
-        <div class="dropdown">
-            <input type="checkbox" id="checkbox_toggle" checked>
-            <label for="checkbox_toggle">Click to Expand</label>
-            <form class="altShippingAddress">
-            <div class="addressFieldset">
-                 <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-            size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput" id="" required="">
-                <div class="cartRuleTop"></div>
-                <fieldset >
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1" id="" required="">
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2" id="" required="">
-                </fieldset>
-                <div class="cartRuleTop"></div>
-                <fieldset >
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3" id="" required="">
-                    <select tabindex="2" id="states" class="statesOption">
-    <option value="State" selected="selected">State</option>                
-    <option value="AL">AL</option>
-    <option value="AK">AK</option>
-    <option value="AZ">AZ</option>
-    <option value="AR">AR</option>    
-    <option value="CA">CA</option>    
-    <option value="CO">CO</option>    
-    <option value="CT">CT</option>    
-    <option value="DE">DE</option>    
-    <option value="DC">DC</option>    
-    <option value="FL">FL</option>    
-    <option value="GA">GE</option>    
-    <option value="HI">HI</option>    
-    <option value="ID">ID</option>    
-    <option value="IL">IL</option>    
-    <option value="IN">IN</option>    
-    <option value="IA">IA</option>    
-    <option value="KS">KS</option>    
-    <option value="KY">KY</option>    
-    <option value="LA">LA</option>    
-    <option value="ME">ME</option>
-    <option value="MD">MD</option>
-    <option value="MA">MA</option>
-    <option value="MI">MI</option>
-    <option value="MN">MN</option>
-    <option value="MS">MS</option>
-    <option value="MO">MO</option>
-    <option value="MT">MT</option>
-    <option value="NE">NE</option>    
-    <option value="NV">NV</option>    
-    <option value="NH">NH</option>    
-    <option value="NJ">NJ</option>    
-    <option value="NM">NM</option>
-    <option value="NY">NY</option>    
-    <option value="NC">NC</option>
-    <option value="ND">ND</option>
-    <option value="OH">OH</option>    
-    <option value="OK">OK</option>
-    <option value="OR">OR</option>
-    <option value="PA">PA</option>
-    <option value="RI">RI</option>
-    <option value="SC">SC</option>
-    <option value="SD">SD</option>
-    <option value="TN">TN</option>
-    <option value="TX">TX</option>
-    <option value="UT">UT</option>
-    <option value="VT">VT</option>    
-    <option value="VA">VA</option>
-    <option value="WA">WA</option>    
-    <option value="WV">WV</option>    
-    <option value="WI">WI</option>
-    <option value="WY">WY</option>
-</select>
-<!--
+            <div class="cartRuleTop"></div>
+            <fieldset>
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3" id="" required="">
+                <select tabindex="2" id="states" class="statesOption">
+                    <option value="State" selected="selected">State</option>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="DC">DC</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GE</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
+                <!--
                     <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
                 size="27" placeholder="State" class="guestCheckoutInput shipAdressInput_4" id="" required="">
 -->
-                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5" id="" required="">
-                </fieldset>
-                <div class="cartRuleTop"></div>
-                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
-                size="27" placeholder="Phone" class="guestCheckoutInput" id="" required="">
-           </div>
-        </form>
+                <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5" id="" required="">
+            </fieldset>
+            <div class="cartRuleTop"></div>
+            <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Phone" class="guestCheckoutInput" id="" required="">
+            <div class="cartRuleTop"></div>
+            <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="email" class="guestCheckoutInput" id="" required="">
         </div>
-        <!-- // BEGIN ALT SHIPPING FORM -->
-        <!-- // BEGIN EXPRESS SHIPPING FORM -->
-        <div class="dropdown">
-            <div class="dropContainer">
-                <button onclick="myFunction()" class="expDropbtn"><span class="expDropbtnLabel">Express Shipping</span><span class="expShipTime">(Est. Delivery ##/##)</span><span class="fa fa-chevron-down fa-2x expDropbtnChevron"></span></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <form class="expShippingForm">
-                        <!-- // BEGIN EXPRESS SHIPPING CONTENT -->
-                        <div class="shippingParent cartRuleTop">
-                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" checked>
 
-                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
-                            <div class="expShipLabel">
-                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
-                            </div>
-                        </div>
-                        <div class="shippingParent cartRuleTop">
-                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" >
-
-                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
-                            <div class="expShipLabel">
-                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
-                            </div>
-                        </div>
-                        <div class="shippingParent cartRuleTop">
-                            <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" >
-
-                            <a href="##" class="shippingMethod">Flat Rate Shipping</a>
-                            <div class="expShipLabel">
-                                    <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
-                            </div>
-                        </div>
-                        
-                        
-                        <!-- // END EXPRESS SHIPPING CONTENT -->
-                    </form>
+        <fieldset class="credit-card-group">
+            <!--                <legend>Credit Card Information</legend>-->
+            <label for="card-number">Credit Card Number</label>
+            <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
+            <label for="card-number">Expiration Date</label>
+            <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
+            <label for="card-number">CVV Number</label>
+            <input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv">
+            <label for="card-number">Billing Zip Code</label>
+            <input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip" id="card-zip">
+        </fieldset>
+    </form>
+    <!-- // END GUEST CHECKOUT FORM -->
+    <!-- // BEGIN ALT SHIPPING FORM -->
+    <div class="altShippingContainer">
+        <div class="altShippingParent">
+            <div class="altShippingCheckboxParent">
+                <label for="checkbox_toggle" class="altShippingCheckboxlabel">Use same information for shipping?</label>
+                <input type="checkbox" id="checkbox_toggle" class="altShipCheckbox" checked>
+            
+            <form class="altShippingAddress">
+                <div class="addressFieldset">
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput" id="" required="">
+                    <div class="cartRuleTop"></div>
+                    <fieldset>
+                        <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1" id="" required="">
+                        <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2" id="" required="">
+                    </fieldset>
+                    <div class="cartRuleTop"></div>
+                    <fieldset>
+                        <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3" id="" required="">
+                        <select tabindex="2" id="states" class="statesOption">
+                            <option value="State" selected="selected">State</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GE</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        <!--
+                    <input type="text" name="##" style="font-size:.875em; vertical-align: middle;"
+                size="27" placeholder="State" class="guestCheckoutInput shipAdressInput_4" id="" required="">
+-->
+                        <input type="text" name="##" style="font-size:.875em; vertical-align: middle;" size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5" id="" required="">
+                    </fieldset>
                 </div>
+        </div>
+        </form>
+            </div>
+    </div>
+    <!-- // BEGIN ALT SHIPPING FORM -->
+    <!-- // BEGIN EXPRESS SHIPPING FORM -->
+    <div class="dropdown">
+        <div class="dropContainer">
+            <button onclick="myFunction()" class="expDropbtn">
+                <div class="expDropbtnLabelParent">
+                    <span class="expDropbtnLabel">Express Shipping</span><span class="expShipTime">(Est. Delivery ##/##)</span>
+                </div>
+                <span class="fa fa-chevron-down fa-2x expDropbtnChevron"></span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <form class="expShippingForm">
+                    <!-- // BEGIN EXPRESS SHIPPING CONTENT -->
+                    <div class="shippingParent cartRuleTop">
+                        <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio" checked>
+
+                        <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                        <div class="expShipLabel">
+                            <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                        </div>
+                    </div>
+                    <div class="shippingParent cartRuleTop">
+                        <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio">
+
+                        <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                        <div class="expShipLabel">
+                            <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                        </div>
+                    </div>
+                    <div class="shippingParent cartRuleTop">
+                        <input type="radio" name="shipping" value="expShipMethod" class="shippingRadio">
+
+                        <a href="##" class="shippingMethod">Flat Rate Shipping</a>
+                        <div class="expShipLabel">
+                            <span class="expShipRate">$3.99</span><span class="shipDate">Day 12/30</span>
+                        </div>
+                    </div>
+
+
+                    <!-- // END EXPRESS SHIPPING CONTENT -->
+                </form>
             </div>
         </div>
-        <!-- // END EXPRESS SHIPPING FORM -->
-        
-        <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
-        <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
-        
-        <!-- // END GUEST CHECKOUT FORM -->
-        <div class="cartRuleTop productContainer">
+    </div>
+    <!-- // END EXPRESS SHIPPING FORM -->
+    <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
+    <div class="checkboxDiscountContainer">
+        <div class="checkboxDiscountParent">
+            <label for="checkbox_Disconts" class="altShippingCheckboxlabel">Discounts & Promotions Opt In?</label>
+            <input type="checkbox" id="checkbox_Disconts" class="altDiscountCheckbox" checked>
+        </div>
+    </div>
+    
+    <!-- // END DISCOUNTS AND PROMOS CHECKBOX -->
+
+    <!-- // END GUEST CHECKOUT FORM -->
+    <div class="cartRuleTop productContainer">
         <!-- // BEGIN BOTTOM CHECKOUT FORM -->
         <div class="btmChecktContainer">
             <div class="btmChecktParent">
@@ -290,30 +294,31 @@
         <script src="scripts/libs/jquery.js"></script>
         <script src="scripts/libs/jquery.inputmask.js"></script>
         <script src="scripts/libs/jquery.inputmask.date.extensions.js"></script>
-	   <script src="scripts/app.js"></script>
+        <script src="scripts/app.js"></script>
         <script>
-
             /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.expDropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-        //      if (openDropdown.classList.contains('show')) {
-        //        openDropdown.classList.remove('show');
-        //      }
+                    toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
             }
-          }
-        }
-    </script>
-        
-    </body>
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.expDropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        //      if (openDropdown.classList.contains('show')) {
+                        //        openDropdown.classList.remove('show');
+                        //      }
+                    }
+                }
+            }
+
+        </script>
+
+</body>
+
 </html>

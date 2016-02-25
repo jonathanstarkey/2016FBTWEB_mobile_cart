@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+"http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
 <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -29,7 +30,7 @@
                     <span class="topSubTotal">$100.00</span>
                 </div>
             </div>
-            <div class="topCheckoutSub sub2">
+            <div class="sub2">
                 <a href="##" class="checkout-btn"><span class="fa fa-lock fa-2x"></span><span class="checkout-btn-label">Secure Checkout</span></a>
             </div>
         </div>
@@ -40,19 +41,25 @@
         <div class="shippingContainer">
             <form class="shippingForm">
                 <div class="shippingParent cartRuleBtm">
-                    <input type="radio" name="shipping" value="Store Pickup" class="shippingRadio">
+                    
                     <div class="shippingLabel">
-                        <span class="shippingMethod">Store Pickup</span><a href="##">Change Store</a><span class="shippingFree">free</span>
+                        <input type="radio" name="shipping" value="Store Pickup" class="shippingRadio">
+                        <div class="shipMethodParent">
+                            <span class="shippingMethod">Store Pickup</span><a href="##">Change Store</a>
+                        </div>
+                        <div class="shipStatus">
+                            <span class="shippingFree">free</span>
+                        </div>
                     </div>
                     <p class="shippingCopy">Ship everything for free to my local store <br></b>
     in <span id="shippingCity" style="font-weight: 700;">Overland Park, KS</span></p> 
                 </div>
                 <div class="shippingParent">
-                    <input type="radio" name="shipping" value="Shipping" class="shippingRadio" checked>
                     <div class="shippingLabel">
+                        <input type="radio" name="shipping" value="Shipping" class="shippingRadio" checked>
                         <span class="shippingMethod">Shipping</span><span class="shippingFlatRate">$3.99 Flat Rate Shipping</span>
                     </div>
-                    <p class="shippingCopy">Express shipping options available in checkout</p>
+                    <p class="shippingCopy">Express shipping options available <br> in checkout</p>
                 </div>
             </form>
         </div>
@@ -60,7 +67,12 @@
         <!-- // BEGIN COUPON FORM -->
         <div class="dropdown">
             <div class="dropContainer">
-                <button onclick="myFunction()" class="dropbtn"><p class="dropbtnLabel">Promo Code & Gift Certificates </p><span class="fa fa-chevron-down fa-2x dropbtnChevron"></span></button>
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="expDropbtnLabelParent">
+                        <p class="dropbtnLabel">Promo Code & Gift Certificates </p>
+                    </div>
+                    <span class="fa fa-chevron-down fa-2x dropbtnChevron"></span>
+                </button>
                 <div id="myDropdown" class="dropdown-content">
                     <form class="couponForm">
                         <input type="text" name="##" style="font-size: 18px; vertical-align: middle;"
