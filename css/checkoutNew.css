@@ -173,9 +173,7 @@ span.shippingMethod {
     font-weight: 800;
 }
 
-span.shippingFree {
-    padding-left: 70px;
-    
+span.shippingFree {    
     color: #e3731b;
     font-weight: 900;
     text-transform: uppercase;   
@@ -194,7 +192,6 @@ div.shippingLabel a:hover {
 
 span.shippingFlatRate {
     font-weight: 800;
-    padding-left: 65px;
     
     float: right;
 }
@@ -790,7 +787,161 @@ span.purchase-btn-label-large {
 
 /*------- END PURCHASE PAGE -------*/
 
+/***************************************/
+/*------- BEGIN CONFIRMATION PAGE -------*/
 
+/*------- BEGIN THANK YOU FOR ORDER -------*/
+
+div.confirmThankYouParent {
+    padding: 20px 10px 0;
+}
+
+div.thankYouParent {
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+label.confirmThankYouLabel {
+    font-size: 1.5em;
+}
+
+div.confirmEmailCopyParent {
+    padding-bottom: 10px;
+}
+
+p.confirmEmailCopy {    
+    font-size: .875em;
+    font-weight:500;
+}
+
+span.confirmEmail {    
+    font-weight:700;
+}
+/*------- END THANK YOU FOR ORDER -------*/
+
+/*------- BEGIN ACCOUNT CREATE -------*/
+
+div.confirmAccountParent {
+    padding: 0 10px;
+}
+
+div.confirmLabelParent {
+    margin-top: 10px;
+    
+}
+
+/*------- END ACCOUNT CREATE -------*/
+
+/*------- BEGIN DELIVERY ADDRESS -------*/
+
+div.confirmDeliverParent {
+    padding: 0 10px;
+}
+
+div.deliverLabelParent {
+    padding-top: 5px; 
+}
+
+div.confirmLabelSpacer {
+    padding-bottom: 10px;
+}
+
+label.confirmDeliverLabel{
+    margin-top: 10px;
+    
+    font-weight: 800;
+}
+
+span.confirmDeliverAddress {
+    color: red;
+    font-weight: 800;
+}
+
+/*------- END DELIVERY ADDRESS -------*/
+
+/*------- BEGIN PRODUCT CONTAINER -------*/
+/*------- END PRODUCT CONTAINER -------*/
+
+/*------- BEGIN ORDER TOTAL -------*/
+
+div.confirmOrderParent {
+    padding: 0 10px;
+}
+
+span.confirmSubTotal {
+    float: right;
+    
+    text-align: right;
+    font-weight: 800;
+}
+
+div.orderTotaleLabelParent {
+    clear: both;
+    
+    font-weight: 800;
+}
+
+div.confirmPriceLabel {
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    text-align: right;
+    line-height: 1.12em;
+}
+
+span.priceLabel {
+    display: block;
+    padding-left: 100px;
+    
+    color: #b2b2b2;
+    font-size:.9em;
+    font-weight: 500;
+}
+
+div.confirmNumberParent {
+    display: inline-block;
+    text-align: left;
+    
+    line-height: 1.12em;
+}
+
+span.priceNumber {
+    display: block;
+    padding-left: 10px;
+    
+    color: #b2b2b2;
+    font-size:.9em;
+    font-weight: 500;
+}
+
+span.grandTotal{
+    color: black;
+    font-weight: 800;
+}
+
+a.callNowColor {
+    background-color: blue;
+}
+/*------- END ORDER TOTAL -------*/
+
+/*------- BEGIN CONTINUE SHOPPING -------*/
+
+/*------- END CONTINUE SHOPPING -------*/
+
+/*------- BEGIN MADE A MISTAKE -------*/
+
+div.btmCallNowParent {
+    padding: 0 10px 10px;
+}
+
+/*------- END MADE A MISTAKE -------*/
+
+/*------- END CONFIRMATION PAGE -------*/
+
+
+
+
+/***************************************/
 /*------- BEGIN MEDIA QUERIES -------*/
 
 
@@ -861,7 +1012,12 @@ span.purchase-btn-label-large {
     }
     
     p.dropbtnLabel {
-        font-size: .8em;
+        font-size: .86em;
+    }
+    
+    span.expShipTime{
+        display: block;
+        padding-left: 10px;
     }
     
 }
