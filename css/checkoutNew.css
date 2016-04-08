@@ -90,8 +90,6 @@ span.topSubTotal {
 }
 
 .checkout-btn span{
-	padding-right:0.3em;
-	margin-right:0.3em;
 	display:inline-block;
 }
 
@@ -463,8 +461,10 @@ div.btmCheckoutSub {
 }
 
 .checkout-btn-large span{
+/*
 	padding-right:0.3em;
 	margin-right:0.3em;
+*/
 	display:inline-block;
 }
 
@@ -926,12 +926,26 @@ a.callNowColor {
 
 /*------- BEGIN CONTINUE SHOPPING -------*/
 
+span.fa.fa-shopping-cart.fa-2x {
+    display: table-cell;
+    padding-left: .375em;
+    
+    vertical-align: middle;
+}
+
 /*------- END CONTINUE SHOPPING -------*/
 
 /*------- BEGIN MADE A MISTAKE -------*/
 
 div.btmCallNowParent {
     padding: 0 10px 10px;
+}
+
+span.fa.fa-phone.fa-2x {
+    display: table-cell;
+    padding-left: .375em;
+    
+    vertical-align: middle;
 }
 
 /*------- END MADE A MISTAKE -------*/
